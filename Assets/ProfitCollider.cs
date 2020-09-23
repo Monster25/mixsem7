@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MineCollider : MonoBehaviour
+public class ProfitCollider : MonoBehaviour
 {
     public GameObject mine;
     private void OnTriggerStay(Collider collider)
