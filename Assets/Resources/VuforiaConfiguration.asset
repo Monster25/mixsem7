@@ -17,8 +17,8 @@ MonoBehaviour:
     ufoLicenseKey: QVlJRlV0ei8vLy8vQUFBQUtDWUR2QUV6T2s3cmk4bkZsTkdqRS9Ram5iL1ZwTVNsQStIclJydXhjSEZITm12Wjhsd2ZseGw2WkZsMktxaGNWNmk2VzRQWStOdFVTbGJxWnlGT01NSU5seUtUU3c2QjhLRm1GK3ZQa3dxSHBsdlA5ZDdaNnFSNXFKVDk5b0FBcE9ReWFteitZSmIya0t0QVprTVJWeGpMZlh4TFkxcEtjNU9nZk1KblVOODFHSjQxVU12b1BmWEZBU0ROQStzT1NITnNLTGowN1NmdUdLcVZsSEdzOFc5dFdCc080T04yUnJKWHNVeU9SMnhUaUdISnphK1dRZGQrV1pJNmhlR2dlQWw2d2JvK3VOZWliMStDVXM3Q1FmaHNRYS8yVmgzYU9La0FXQmdaYU4yN0IxTVJaS2p0RmlvNW9TMkR2S2IzSC8zL0wvczBsdEdyRjI4cTc0bDBlT3FZNERkT1JlcVIzajR5dTVETVFTZis=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 3
-    maxSimultaneousObjectTargets: 3
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
     virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
   deviceTracker:
     autoStartTracker: 1
     arcoreRequirement: 1
-    autoImportArcore: 1
+    autoImportArcore: 0
   playmode:
     mSequencePath: 
     playModeType: 0

@@ -4,33 +4,52 @@ using UnityEngine;
 
 public class CivillianCollider : MonoBehaviour
 {
-    public GameObject go1, go2, go3;
+    public GameObject go1, go2, go3, activego;
+    bool inTheZone = false;
 
-    private void OnTriggerEnter(Collider collider)
+    private void OnTriggerStay(Collider collider)
     {
-        if(collider.name == "Plane")
+        if (collider.name == "Plane")
         {
-            go1.SetActive(true);
+            inTheZone = true;
+            activego.SetActive(true);
         }
-        else
+        else if (collider.name == "Civilian")
         {
-            go2.SetActive(true);
+            activego = go2;
+            if (inTheZone)
+            {
+                go2.SetActive(true);
+            }
+            else
+            {
+                go2.SetActive(false);
+            }
             go1.SetActive(false);
             go3.SetActive(false);
         }
-         
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.name == "Plane")
         {
-            go1.SetActive(false);
+            inTheZone = false;
+            activego.SetActive(false);
         }
-        else
+        else if (other.name == "Civilian")
         {
+            activego = go1;
+            if (inTheZone)
+            {
+                go1.SetActive(true);
+                go3.SetActive(true);
+            }
+            else
+            {
+                go1.SetActive(false);
+                go3.SetActive(false);
+            }
             go2.SetActive(false);
-            go1.SetActive(true);
-            go3.SetActive(true);
         }
     }
 }

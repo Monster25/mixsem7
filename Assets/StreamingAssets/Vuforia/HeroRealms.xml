@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="BAS-EN-027-fire-bomb" size="0.055000 0.076963" />
+    <ImageTarget name="BAS-EN-001-arkus-imperial-dragon" size="0.055000 0.076963" />
     <ImageTarget name="BAS-EN-033-profit" size="0.055000 0.076963" />
     <ImageTarget name="BAS-EN-081-fire-gem" size="0.055000 0.076963" />
     <ImageTarget name="BAS-EN-097-gold" size="0.055000 0.076963" />
